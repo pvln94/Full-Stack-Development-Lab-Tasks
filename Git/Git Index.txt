@@ -1,0 +1,57 @@
+Topic-1: Introduction to Version Control Syste
+Topic-2: Features and Architecture of GIT 
+Topic-3: Life Cycle of File in GIT 
+Topic-4: Git Installation On Windows 
+Topic-5: Example To Understand Working Directory, Staging Area and               Local Repository
+Topic-6: The 6 Git Commands With Example - init,status,add,commit,log           and config 
+Topic-7: The complete info of git log command 
+Topic-8: The Complete Story of git diff command 
+Topic-9: Helix Visual Merge Tool(p4merge) For Checking Differences 
+Topic-10: Removing files by using git rm command 
+Topic-11: Undo changes with git checkout command 
+Topic-12: Git References (master and HEAD) 
+Topic-13: Git reset command 
+Topic-14: Git Aliases - Providing our own convenient names to git            commands 
+Topic-15: Ignoring unwanted files and directories by using .gitignore              file
+Topic-16: Any Special Treatment for directories by Git? 
+Topic-17: Branching And Merging 
+Topic-18: Merging by using Rebase 
+Topic-19: Stash in GIT 
+Topic-20: Working with Remote Repositories 
+Topic-21: Git Tagging (git Tag Command) 
+Topic-22: git revert Command 
+Topic-22: Cherry-Picking (git cherry-pick Command) 
+Topic-23: git reflog Command 
+Topic-24: Working with Remote Repositories 
+   Need of Remote Repositories 
+   How to work with GitHub? 
+   How to create account in GitHub? 
+   How to create a new reposioty in Github? 
+   How to work with Remote Repository? 
+      1) git remote 
+      2) git push 
+      3) git clone 
+      4) git pull 
+      5) git fetch
+
+Topic-25: Git Tagging (git Tag Command) 
+	 Introduction to Tagging 
+	 Creation of a Light Weight Tag 
+	 How to delete a tag? 
+	 Annotated Tags (Tags with Information) 
+	 How to tag a previous commit? 
+	 How to update an existing tag? 
+         How to compare Tags 
+         How to push tags to remote repository? 
+
+Topic-26: git revert Command 
+      Need of revert command 
+      Demo Example to revert last commit 
+      Demo example to revert a particular commit
+
+Topic-27: Cherry-Picking (git cherry-pick Command) 
+     Need of Cherry-Picking 
+     Use cases of cherry-pick 
+     Demo Example for cherry-picking
+Topic-28: git reflog Command
+
