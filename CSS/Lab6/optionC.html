@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Flexbox & Grid</title>
+
+    <style>
+        /* Basic reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout */
+            gap: 20px;
+            padding: 20px;
+            justify-items: center; /* Center each grid item */
+        }
+
+        /* Styling for each gallery item */
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Stack image and caption vertically */
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd; /* Border between image and caption */
+        }
+
+        /* Flexbox for aligning caption inside each gallery item */
+        .caption {
+            display: flex;
+            justify-content: center; /* Center the caption */
+            align-items: center; /* Vertically center the caption */
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        .caption h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Hover effect to enlarge images */
+        .gallery-item:hover img {
+            transform: scale(1.05); /* Slight zoom effect */
+            transition: transform 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center; padding: 20px; background-color: #333; color: white;">Simple Photo Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 1">
+            <div class="caption">
+                <h3>Beautiful Landscape</h3>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 2">
+            <div class="caption">
+                <h3>Mountain View</h3>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 3">
+            <div class="caption">
+                <h3>City Lights</h3>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 4">
+            <div class="caption">
+                <h3>Ocean Breeze</h3>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 5">
+            <div class="caption">
+                <h3>Forest Walk</h3>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="C:\Users\CSE LAB\Desktop\FSD\Lab6\oggy.jpg" alt="Image 6">
+            <div class="caption">
+                <h3>Desert Adventure</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
