@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+
+    <style>
+        /* Sticky Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Content Section */
+        .content {
+            margin-top: 60px; /* Offset for fixed header */
+            padding: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sticky Header</h1>
+    </header>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>
+            Scroll down the page to see how the header remains fixed at the top while the content scrolls. The header is positioned using `position: fixed`, which makes it stick to the top of the page.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed turpis sit amet nunc rhoncus euismod ac at augue. Fusce gravida nisl ut odio iaculis, sed volutpat lorem gravida.
+        </p>
+        <p>
+            Continue scrolling to see how the content moves while the header remains fixed at the top.
+        </p>
+    </div>
+
+</body>
+</html>
