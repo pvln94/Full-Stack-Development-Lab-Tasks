@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Box Model</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Box Model and Layout */
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 20px;
+            display: inline-block; /* Aligns divs side by side */
+            text-align: center;
+            line-height: 100px; /* Center text vertically */
+        }
+
+        .box1 {
+            background-color: lightblue;
+        }
+
+        .box2 {
+            background-color: lightgreen;
+        }
+
+        .box3 {
+            background-color: lightcoral;
+        }
+
+        /* Experimenting with display: block */
+        .block-box {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 20px;
+            border: 5px solid black;
+            text-align: center;
+            line-height: 150px; /* Center text vertically */
+        }
+
+        /* Adding border-radius for rounded corners */
+        .box {
+            border-radius: 15px;
+        }
+
+        /* Box-Sizing */
+        .box1 {
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+        }
+
+        /* Adding hover effect */
+        .box:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Experimenting with CSS Box Model & Layout</h1>
+
+    <!-- Section for 3 adjacent divs with colored borders -->
+    <h2>Three Adjacent Boxes</h2>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+
+    <!-- Section for display: block vs inline-block -->
+    <h2>Block vs Inline-Block</h2>
+    <div class="box1" style="display: block;">Block Box 1</div>
+    <div class="box2" style="display: block;">Block Box 2</div>
+    <div class="box3" style="display: block;">Block Box 3</div>
+
+    <h3>Boxes using inline-block (default)</h3>
+    <div class="box box1">Inline-Block Box 1</div>
+    <div class="box box2">Inline-Block Box 2</div>
+    <div class="box box3">Inline-Block Box 3</div>
+
+    <!-- Experimenting with border-radius -->
+    <h2>Boxes with Rounded Corners</h2>
+    <div class="box box1">Rounded Box 1</div>
+    <div class="box box2">Rounded Box 2</div>
+    <div class="box box3">Rounded Box 3</div>
+
+    <!-- Experimenting with box-sizing -->
+    <h2>Experimenting with Box-Sizing</h2>
+    <div class="box1">Content-Box (Padding + Border NOT included)</div>
+    <div class="box2">Border-Box (Padding + Border INCLUDED)</div>
+
+</body>
+</html>
