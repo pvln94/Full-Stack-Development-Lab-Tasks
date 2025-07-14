@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 - CSS Selectors</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Element selector for <p> */
+        p {
+            color: teal;
+        }
+
+        /* Class selector for <li> items */
+        .special-list-item {
+            color: darkorange;
+            font-weight: bold;
+        }
+
+        /* Attribute selector for <a> tags with href containing "http" */
+        a[href^="http"] {
+            color: darkblue;
+        }
+
+        /* Pseudo-class for hover effect */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-element for first letter of <p> */
+        p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* :nth-child(even) pseudo-class for even <li> items */
+        li:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        /* ::before pseudo-element for <h2> */
+        h2::before {
+            content: "🔶 ";
+            font-size: 1.5em;
+        }
+
+        /* Styling for <div> with unique ID */
+        #uniqueDiv {
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to CSS Selectors Lab</h1>
+
+    <h2>Introduction</h2>
+    <p>This is a paragraph to demonstrate CSS styling using various selectors.</p>
+
+    <h2>List Example</h2>
+    <ul>
+        <li>Item 1</li>
+        <li class="special-list-item">Item 2 (Special)</li>
+        <li>Item 3</li>
+        <li class="special-list-item">Item 4 (Special)</li>
+    </ul>
+
+    <h2>Links</h2>
+    <p>Visit <a href="http://example.com">Example.com</a> or <a href="https://example.org">Example.org</a>.</p>
+    
+    <div id="uniqueDiv">
+        This is a unique div with a special id.
+    </div>
+
+</body>
+</html>
