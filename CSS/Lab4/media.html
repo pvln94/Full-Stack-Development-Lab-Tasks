@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Navbar</title>
+
+    <style>
+        /* Basic reset for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Horizontal navbar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Flexbox layout to keep items horizontally */
+            justify-content: center; /* Center the navbar items */
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        li a:hover {
+            background-color: #575757;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            ul {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center the items */
+            }
+
+            li {
+                display: block; /* Make the list items block level */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
