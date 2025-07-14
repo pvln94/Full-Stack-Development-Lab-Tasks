@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Rotation Animation</title>
+
+    <style>
+        /* Styling the rotating element */
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: #f39c12;
+            border-radius: 5%;
+            margin: 50px auto;
+            animation: rotate-animation 5s infinite linear; /* Apply rotation animation */
+        }
+
+        /* Keyframes for rotating */
+        @keyframes rotate-animation {
+            0% {
+                transform: rotate(0deg); /* Start from 0 degrees */
+            }
+            100% {
+                transform: rotate(360deg); /* Rotate to 360 degrees */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="rotate"></div>
+
+</body>
+</html>
